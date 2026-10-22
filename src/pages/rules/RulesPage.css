@@ -1,0 +1,57 @@
+.santa-rules {
+  position: relative;
+  min-height: 100%;
+  min-height: 100dvh;
+}
+
+.santa-rules::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background-color: #efefef;
+  background-image: var(--santa-bg-desk);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+@media screen and (max-width: 768px) {
+  .santa-rules::before {
+    background-image: var(--santa-bg-mob);
+    background-size: cover;
+    background-attachment: scroll;
+  }
+}
+
+.santa-rules .play-now {
+  position: absolute;
+  bottom: 47%;
+  left: 28%;
+  z-index: 999999;
+  width: 43%;
+}
+
+@media screen and (max-width: 766px) {
+  .santa-rules .play-now {
+    bottom: 30%;
+    left: 22%;
+    width: 56%;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1000px) {
+  .santa-rules .play-now {
+    bottom: 41%;
+    left: 26%;
+    width: 48%;
+  }
+}
+
+.santa-rules .bottom-strip {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 99999;
+}

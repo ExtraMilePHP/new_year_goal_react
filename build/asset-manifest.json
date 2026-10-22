@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a05d0cb2.css",
+    "main.js": "/static/js/main.a42c0427.js",
+    "static/js/453.96fb2892.chunk.js": "/static/js/453.96fb2892.chunk.js",
+    "static/media/FiraSans-Medium.otf": "/static/media/FiraSans-Medium.44a11b34f8c84178c61f.otf",
+    "index.html": "/index.html",
+    "main.a05d0cb2.css.map": "/static/css/main.a05d0cb2.css.map",
+    "main.a42c0427.js.map": "/static/js/main.a42c0427.js.map",
+    "453.96fb2892.chunk.js.map": "/static/js/453.96fb2892.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a05d0cb2.css",
+    "static/js/main.a42c0427.js"
+  ]
+}

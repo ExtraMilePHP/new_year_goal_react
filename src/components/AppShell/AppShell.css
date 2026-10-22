@@ -1,0 +1,39 @@
+.ddd-user-shell {
+  position: relative;
+  height: 100dvh;
+  height: 100svh;
+  width: 100%;
+  max-width: 100vw;
+  overflow: hidden;
+  box-sizing: border-box;
+  background: transparent;
+}
+
+.ddd-user-main {
+  height: 100%;
+  width: 100%;
+  min-width: 0;
+  overflow: auto;
+  box-sizing: border-box;
+}
+
+.ddd-user-main:has(.santa-stage-1) {
+  overflow: hidden;
+}
+
+/* The PHP pages show a 10px dark scrollbar on the game page. */
+.ddd-user-main:has(.ny-game)::-webkit-scrollbar {
+  width: 10px;
+}
+
+.ddd-user-main:has(.ny-game)::-webkit-scrollbar-track {
+  background: black;
+}
+
+.ddd-user-main:has(.ny-game)::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+.ddd-user-main:has(.ny-game)::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

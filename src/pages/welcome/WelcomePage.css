@@ -1,0 +1,53 @@
+.ny-welcome {
+  position: relative;
+  height: 100%;
+  min-height: 100%;
+  background: #ffffff;
+}
+
+.ny-welcome .auto {
+  margin: auto;
+  float: none;
+}
+
+.ny-welcome .desk2,
+.ny-welcome .mob2 {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .ny-welcome .desk2 {
+    display: block;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+  }
+}
+
+@media (min-width: 100px) and (max-width: 766px) {
+  .ny-welcome .mob2 {
+    display: block;
+    margin-top: 50%;
+    width: 100%;
+  }
+}
+
+.ny-welcome .beginbtnclass {
+  position: absolute;
+  bottom: 5%;
+  width: 100%;
+}
+
+.ny-welcome .begin {
+  font-weight: bold;
+  background-color: #5bc0de;
+  padding: 5px 15px 5px 15px;
+  font-size: 15px;
+  border-radius: 10px;
+}
+
+.ny-welcome a {
+  text-decoration: none;
+}

@@ -1,0 +1,23 @@
+// Firebase Realtime Database rules (not Firestore).
+// Paste into Firebase Console → Realtime Database → Rules.
+// No Firebase Authentication: open read/write on pickRooms only.
+
+{
+  "rules": {
+    "pickRooms": {
+      "$roomId": {
+        "slides": {
+          ".read": true,
+          "$slideIdx": {
+            "items": {
+              ".read": true,
+              "$itemKey": {
+                ".write": true
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,190 @@
+/* Ported from php game code: css/styles.css, css/em-popup.css and the inline styles of game.php. */
+.ny-game {
+  font-family: 'FiraSans-Medium', sans-serif;
+  width: 100%;
+  min-height: 100%;
+  padding-top: 85px;
+  background-color: white;
+  background-image: var(--bg-web);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.ny-game .auto {
+  margin: auto;
+  float: none;
+}
+
+.ny-game .mob {
+  display: none;
+}
+
+.ny-game .desk {
+  display: block;
+}
+
+.ny-game .text-cheer {
+  width: 100%;
+  font-size: 16px;
+  padding: 3px;
+  border-radius: 3px;
+  border: 1px solid;
+}
+
+.ny-game .submit {
+  width: 130px;
+  font-size: 18px;
+  background: #2b5672;
+  border: none;
+  color: white;
+}
+
+.ny-game .goal {
+  display: none;
+}
+
+.ny-game .goal.show {
+  display: block;
+}
+
+.ny-game .video-container {
+  margin-top: 20px;
+}
+
+.ny-game .like-image {
+  width: 20px;
+  cursor: pointer;
+  z-index: 999;
+  position: relative;
+}
+
+.ny-game .operation {
+  background: #142138;
+  color: white;
+  margin-top: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  border: 4px solid #cfc065;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.ny-game .to-father {
+  padding-bottom: 3px;
+  height: 100px;
+  width: 100%;
+  overflow: visible;
+  box-sizing: border-box;
+  transition: 0.5s all;
+  word-break: break-all;
+  margin-bottom: 10px;
+}
+
+.ny-game .delete-post {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 16px;
+  top: 0px;
+  background: black;
+  border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+  .ny-game .operation {
+    height: 250px !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .ny-game .operation {
+    height: 220px !important;
+  }
+}
+
+@media (min-width: 100px) and (max-width: 500px) {
+  .ny-game {
+    overflow: scroll;
+    background-image: var(--bg-mob);
+    background-repeat: repeat;
+  }
+
+  .ny-game .desk {
+    display: none;
+  }
+
+  .ny-game .mob {
+    display: block;
+  }
+}
+
+/* em-popup */
+.ny-game .em-popup {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 0;
+  overflow-y: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 10000;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.ny-game .em-modal {
+  width: 400px;
+  margin: 0 auto;
+  margin-top: 60px;
+}
+
+.ny-game .em-popup-button {
+  margin-top: 5px;
+  font-size: 20px;
+  font-weight: bolder;
+  padding: 5px 15px;
+  width: max-content;
+  transform: rotate(-3deg);
+}
+
+.ny-game .em-icon-container {
+  width: 100%;
+}
+
+.ny-game .em-icon-container img {
+  width: 335px;
+  transform: rotate(-3deg);
+  position: relative;
+  top: -20px;
+  transition: 1s all;
+}
+
+.ny-game .em-content {
+  font-size: 25px;
+  width: 350px;
+  padding: 5px;
+  line-height: 30px;
+  color: #5679ff;
+  margin: 0 auto;
+  border-radius: 10px;
+  background: white;
+  transform: rotate(3deg);
+  transition: 1s all;
+}
+
+@media (min-width: 100px) and (max-width: 500px) {
+  .ny-game .em-content {
+    font-size: 21px;
+    width: 75%;
+    padding: 4px;
+    line-height: 25px;
+  }
+
+  .ny-game .em-icon-container img {
+    width: 41%;
+  }
+}
